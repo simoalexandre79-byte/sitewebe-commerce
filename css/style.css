@@ -1,0 +1,200 @@
+.wrap_top_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.list_element {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap_top_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.list_element {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrapper_top_header {
+    padding: 15px 30px;
+    background-color: #212529;
+}
+
+p.paragraph_top_header {
+    color: #ffffff;
+}
+
+ul.list_element li {
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Bouton */
+.menu-btn {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Bloc du menu (caché par défaut) */
+.menu {
+    display: none; /* caché */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+    z-index: 6;
+}
+
+/* Colonnes */
+.menu-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px;
+}
+
+.menu-column h3 {
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.menu-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-column li {
+    margin: 8px 0;
+}
+
+.menu-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-column a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation principale */
+nav {
+    background: #222;
+    color: #fff;
+    /* padding: 10px 20px; */
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative; /* nécessaire pour le sous-menu */
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sous-menu (mega menu) */
+.mega-menu {
+    display: none; /* caché par défaut */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 600px;
+    background: #333;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+
+    /* Grille de colonnes */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; */
+    z-index: 3;
+}
+
+.mega-menu h4 {
+    margin-top: 0;
+    color: #f4b400;
+}
+
+.mega-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mega-menu ul li {
+    margin: 8px 0;
+}
+
+.mega-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mega-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Affichage au survol */
+nav ul li:hover .mega-menu {
+    display: grid;
+}
